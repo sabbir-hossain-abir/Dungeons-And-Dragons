@@ -2,6 +2,8 @@ class Rogue extends Character implements Race {
 
     public Rogue(String name, int seed) {
         super(name, seed);
+
+        //Passing The Highest Values to the specific Ability of the character
         super.setDexterity(array[0]);
         super.setIntelligence(array[1]);
         super.setStrength(array[2]);
@@ -10,6 +12,7 @@ class Rogue extends Character implements Race {
         super.setCharisma(array[5]);
     }
 
+    //Calling The Constructor
     public Rogue(String name, int level, int strength, int dexterity, int constitution, int intelligence, int wisdom, int charisma,int proficiencyMod, int health, boolean isDead, int race) {
         super(name, level, strength, dexterity, constitution, intelligence, wisdom, charisma, proficiencyMod, health, isDead, race);
     }

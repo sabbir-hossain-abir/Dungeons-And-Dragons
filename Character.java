@@ -12,7 +12,6 @@ public abstract class Character implements Race{
     public int[] array=new int[6];
 
     public Character(String name, int seed) {
-        //implement this constructor using constructor delegation
         this.level = 1;
         this.health = 5;
         this.name = name;
@@ -23,6 +22,7 @@ public abstract class Character implements Race{
 
         Random random = new Random(seed);
 
+        //Generating Random Values of Sum for 6 times
         for (int j = 0; j < maxsum.length; j++) {
             int max1 = 0, max2 = 0, max3 = 0, sum = 0;
 
